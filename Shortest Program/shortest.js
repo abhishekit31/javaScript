@@ -14,7 +14,7 @@
 var num = 10; // golobal variablepr global scope
 console.log(window.num); //10
 console.log(num); // 10
-console.log(this.num) // 10
+console.log(this.num) // 10 if we are using this.num it will also point to the same refrence
 
 
 function local_Scope(){
