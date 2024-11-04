@@ -19,11 +19,9 @@ let b = 20;
 // let c = 10;
 // var d = 100;
 
-
 /**
  * in case of let we declared a varibal we can initaized latter in the code whereas in the case of const we can't initialize the value letter in the code. 
  */
-
 
 // let a;
 // a = 20;
