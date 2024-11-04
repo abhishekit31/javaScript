@@ -27,6 +27,6 @@ function b(){
  * after invoke b() the contorl will goes to the line 6 check the value assign to the x var and log into the console.
  * after that pop-out from the callstack.
  * 
- * agian control goes to line no. 1st and assign the var x and replace it to thw value 1 and log into the console 
+ * agian control goes to line no. 4th and assign the var x and replace it to thw value 1 and log into the console 
  * after this step the callstack is empty and whole global execution also has been deleted.
  */
