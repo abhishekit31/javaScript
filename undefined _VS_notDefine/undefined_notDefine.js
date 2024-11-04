@@ -10,6 +10,14 @@ else{
     console.log("num is not undefined");
 }
 
+
+
+var a ;
+console.log(a); // undefined
+a = 10;
+console.log(a); // 10
+a = "Hello World!";
+console.log(a); // Hello Wold!
 /**
  * UNdefind variable that has been declared but not assigned a value is undefined 
  * 
