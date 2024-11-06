@@ -36,3 +36,24 @@ const maxElement = arr.reduce(function (max, curr) {
   return max;
 }, 0);
 console.log(maxElement);
+
+//----another example of reduce function----
+
+const user = [
+  { firstName: "Abhishek", lastName: "kumar", age: 27 },
+  { firstName: "Vishu", lastName: "sigh", age: 28 },
+  { firstName: "Goldu", lastName: "singh", age: 20 },
+  { firstName: "ramR", lastName: "ram", age: 27 },
+];
+
+// {20: 1, 27: 2, 28: 1}
+
+const ageCount = user.reduce(function (acc, curr) {
+  if (acc[curr.age]) {
+    acc[curr.age] = ++acc[curr.age];
+  } else {
+    acc[curr.age] = 1;
+  }
+  return acc;
+}, {});
+console.log(ageCount);
