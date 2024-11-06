@@ -11,6 +11,7 @@ console.log("Season-2");
  *
  * it create a structures like pyramid of Doom
  */
+
 const cart = ["Shoes", "Pants", "Kurta"];
 
 api.createOrder(cart, function () {
@@ -20,3 +21,8 @@ api.createOrder(cart, function () {
     });
   });
 });
+
+// ---- Inversion of control ----
+
+// inversion of control is nothing but it is another problem while we are using callback.
+// we can loose our control by using callback.
