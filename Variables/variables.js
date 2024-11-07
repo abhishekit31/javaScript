@@ -5,12 +5,12 @@ accountCity = "New Delhi";
 
 console.table([accountId, accountEmail, accountPass, accountCity]);
 
-// accountId = "1212"; not allowed
 /*
 Prefer not used var keyword to declare the caribale
 because of issue of scope and function scope
 */
 
+// accountId = "1212"; not allowed
 accountEmail = "abhishek@gmail.com";
 accountPass = "125";
 accountCity = "Delhi";
