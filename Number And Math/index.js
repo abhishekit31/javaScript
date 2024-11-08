@@ -22,3 +22,6 @@ let num1 = 20.1;
 console.log(Math.ceil(num1)); // (21) it will log the ceil value
 
 console.log(Math.floor(num1)); //(20) it will log the floor value
+
+let sq = 8;
+console.log(Math.sqrt(sq));
