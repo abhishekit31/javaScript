@@ -17,3 +17,24 @@ coding.forEach(printMe);
 coding.forEach((item, index, arr) => {
   console.log(item, index, arr);
 });
+
+//Object inside the array
+
+const languages = [
+  {
+    languageName: "javaScript",
+    extentionName: "js",
+  },
+  {
+    languageName: "java",
+    extentionName: "java",
+  },
+  {
+    languageName: "python",
+    extentionName: "py",
+  },
+];
+
+languages.forEach((item) => {
+  console.log(`${item.languageName} : ${item.extentionName}`);
+});
