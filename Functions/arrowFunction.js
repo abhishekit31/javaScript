@@ -11,11 +11,13 @@ user.messageDisplay(); // Abhishek, welcome to the website !
 user.userName = "Goldu";
 user.messageDisplay(); //  Goldu, welcome to the website !
 
-// function chai() {
-//   let userName = "Vishal";
-//   console.log(this.userName); //undefined
-// }
-// chai();
+function chai() {
+  let userName = "Vishal";
+  console.log(this.userName); //undefined
+}
+chai();
+
+//+++++++++++ ARROW FUNCTION ++++++++++
 
 const chai = () => {
   let userName = "Vishu";
