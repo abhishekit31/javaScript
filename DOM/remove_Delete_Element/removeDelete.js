@@ -41,7 +41,7 @@ editLi.innerHTML = "mojo";
 
 // =========Edit the list by optimized way==========
 
-const editLi = document.querySelector("li:nth-child(2");
+const editLi = document.querySelector("li:nth-child(2)");
 const newLi = document.createElement("li");
 newLi.textContent = "mojo";
 editLi.replaceWith(newLi);
