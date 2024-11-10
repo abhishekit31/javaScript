@@ -36,7 +36,7 @@ addOptimizeLang("ruby");
 
 // =========Edit the list==========
 
-const editLi = document.querySelector("li:nth-child(2");
+const editLi = document.querySelector("li:nth-child(2)");
 editLi.innerHTML = "mojo";
 
 // =========Edit the list by optimized way==========
