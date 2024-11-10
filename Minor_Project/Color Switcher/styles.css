@@ -1,0 +1,49 @@
+html {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}
+#canvas {
+    text-align: center;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+    border: solid black 1px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px; 
+}
+
+#grey{
+    background: rgb(136, 130, 130);
+}
+
+#pink{
+    background: rgb(234, 179, 179);
+}
+
+#blue{
+    background: rgb(9, 20, 240);
+}
+
+#yellow{
+    background: yellow;
+}
+h2{
+    font-family: cursive;
+}
+
