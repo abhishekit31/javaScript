@@ -72,16 +72,16 @@
 // // =========BODY APPEND SECTION=========
 // document.body.appendChild(container);
 
-// =========ANOTHER WAY TO OPTIMIZE THE CODE=========
+// ========= TRY ANOTHER WAY TO OPTIMIZE THE CODE=========
 
-// Main Container
+// =========MAIN CONTAINER SECTION=========
 const container = document.createElement("div");
 container.id = "container";
 
-// Heading
+// =========HEADING SECTION=========
 container.innerHTML = `<h1>BMI Calculator</h1>`;
 
-// Form Section
+// =========FORM SECTION=========
 const form = document.createElement("form");
 form.innerHTML = `
   <p>
@@ -102,7 +102,7 @@ form.innerHTML = `
 container.appendChild(form);
 document.body.appendChild(container);
 
-// =========INRACTIVITY SECTION=========
+// =========INTRACTIVITY SECTION=========
 const form1 = document.querySelector("form");
 
 form1.addEventListener("submit", function (e) {
