@@ -1,4 +1,8 @@
-# javaScript and classes
+# OOPs (Object oriented programming)
+
+- it is a programming paradigms (mean the structure or style of code)
+
+## javaScript and classes
 
 - In JavaScript, classes provide a way to create reusable objects with methods and properties. Classes were introduced in ES6 and make it easier to work with object-oriented programming (OOP) principles.
 
@@ -19,8 +23,10 @@ class Person {
 }
 
 // Creating an instance of the Person class
-const person1 = new Person("Alice", 30);
-person1.greet(); // Hello, my name is Alice and I am 30 years old.
+const person1 = new Person("Abhishek", 21);
+person1.greet(); // Hello, my name is Abhishek and I am 30 years old.
 ```
 
-## OOPs (Object oriented propgramming)
+## Encapsulation
+
+- it is a programming paradigms (mean the structure or style of code)
