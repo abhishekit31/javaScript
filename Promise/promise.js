@@ -48,7 +48,7 @@ promiseThree.then((user) => {
   console.log(user); // { usernName: 'Abhsihek', emali: 'abhi@gmail.com' }
 });
 
-// =========Creating the new promise=========
+// =========Creating new promise=========
 const promiseFour = new Promise((res, rej) => {
   setTimeout(() => {
     let error = true;
@@ -78,7 +78,7 @@ promiseFour
     console.log("the promise is either resolve or rejectd");
   });
 
-// =========handling promise by asyn await=========
+// =========handling promise by async await=========
 
 const promiseFive = new Promise((resolve, reject) => {
   setTimeout(() => {
@@ -100,3 +100,29 @@ async function consumePrmoiseFive() {
   }
 }
 consumePrmoiseFive();
+
+//=========Fetching data from Api's=========
+
+async function getData() {
+  try {
+    const response = await fetch("https://api.github.com/users/abhishekit31");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log("ERR: ", error);
+  }
+}
+getData();
+
+// =========Fetching data from Api's by .then(), .catch()=========
+
+fetch("https://api.github.com/users/abhishekit31")
+  .then((res) => {
+    return res.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log("ERROR : ", error);
+  });
