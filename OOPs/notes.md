@@ -56,7 +56,7 @@ console.log(person.greet());
 
 ## Four Pillars of OOPs
 
-Abstarction :- hiding the details like (fetch)
-Encapsulation :- warap up a data into a capsule
-Inheritance :- inherit all the property of parent
-Polymorphism :- showing different different behaviour in it's life cycyle.
+- Abstarction :- hiding the details like (fetch)
+- Encapsulation :- warap up a data into a capsule
+- Inheritance :- inherit all the property of parent
+- Polymorphism :- showing different different behaviour in it's life cycyle.
