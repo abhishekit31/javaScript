@@ -89,3 +89,32 @@ user1.printMe();
 - The constructor is called : The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return values is specified from the constructor, javascript assumres this, the newly created object, to be intended return value
 
 - The new object is returned : After the cinstructor function has been called, if it doesn't return a non-primitive value(object, array, function etc..) the newly created object is returned.
+
+## Inheritance
+
+```javascript
+class User {
+  constructor(username) {
+    this.username = username;
+  }
+  logMe() {
+    console.log(`USERNAME : ${this.username}`);
+  }
+}
+class Teacher extends User {
+  constructor(username, email, pass) {
+    super(username);
+    this.email = email;
+    this.pass = pass;
+  }
+  addCourse() {
+    console.log(`A course wad added by ${this.username}`);
+  }
+}
+
+const abhi = new Teacher("abhi", "abhi@gmail.com", 1234);
+abhi.addCourse();
+
+const user = new User("visihu");
+user.logMe();
+```
