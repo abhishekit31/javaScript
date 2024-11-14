@@ -28,3 +28,21 @@ z();
 /**
  * here at after line number 24 function x() is not any more in call stack but the lexical scope is still exist so here it will print 10 at line:20
  */
+
+//=========REAL WORLD EXAMPLE========
+
+// document.getElementById("orange").onclick = () => {
+//   document.body.style.backgroundColor = `orange`;
+// };
+// document.getElementById("green").onclick = () => {
+//   document.body.style.backgroundColor = `green`;
+// };
+
+function clickHandler(color) {
+  // document.body.style.backgroundColor = color;
+  return function () {
+    document.body.style.backgroundColor = color;
+  };
+}
+document.getElementById("orange").onclick = clickHandler("orange");
+document.getElementById("green").onclick = clickHandler("green");
