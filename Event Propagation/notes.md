@@ -7,7 +7,7 @@
 2. Bubbling phase
 3. Capturing phase
 
-- ![PROPAGATION](./Images/image.png)
+ ![PROPAGATION](./Images/image.png)
 
 ## Event Bubbling
 
