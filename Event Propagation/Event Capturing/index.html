@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propagation - Bubbling & Capturing</title>
+    <style>
+      h1 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      #grandparent {
+        background-color: lightgreen;
+        padding: 40px;
+        text-align: center;
+      }
+
+      #parent {
+        background-color: yellow;
+        padding: 30px;
+        text-align: center;
+      }
+
+      #child {
+        background-color: blueviolet;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .box {
+        border: 1px solid black;
+        display: -moz-inline-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Event Propagation - Bubbling & Capturing</h1>
+
+    <div id="grandparent" class="box">
+      GrandParent
+      <div id="parent" class="box">
+        Parent
+        <div id="child" class="box">Child</div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
