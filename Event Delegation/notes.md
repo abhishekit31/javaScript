@@ -12,7 +12,7 @@
 
 Sometime in our web page we have huge number of events need to handle and at some point of time we are reached at the point where all the events are segrigate to each other and it's very difficult to manage the web page.
 
-so, the event delegation provide the technique to attached the eventListner to the parent of that elements intead of attaching the eventListner to the each an every HTML element.
+so, the event delegation provide the technique to attached the `addEventListener()` to the parent of that elements intead of attaching the `addEventListener()` to the each an every HTML element.
 
 ## index.html
 
