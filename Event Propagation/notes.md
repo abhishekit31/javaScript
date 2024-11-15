@@ -36,7 +36,7 @@ document.querySelector("#child").addEventListener("click", () => {
 - If we click the child div the output will be (Grandparent -> Parent -> child).
 
 -by default event bubbling is used in event propagation, if we want to capturing we need to pass the third argument inside the `addEventListener()` as boolean value.
-`addEventListner('clicl', () => { }, true)`.
+`addEventListner('click', (e) => { }, true)`.
 
 ```javascript
 document.querySelector("#grandparent").addEventListener(
