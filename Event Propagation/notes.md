@@ -64,4 +64,4 @@ document.querySelector("#child").addEventListener(
 
 ## Event Propagation
 
-- If wre want the event target should only get triggered then we need to stop the propagation. (event.stopPropagation) to stop the propagation.
+- If wre want the event target should only get triggered then we need to stop the propagation. `event.stopPropagation` to stop the propagation.
