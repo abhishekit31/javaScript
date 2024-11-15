@@ -35,8 +35,8 @@ document.querySelector("#child").addEventListener("click", () => {
 - It goes down to up.
 - If we click the child div the output will be (Grandparent -> Parent -> child).
 
--by default event bubbling is used in event propagation, if we want to capturing we need to pass the third argument inside the addEventListner as boolean value.
-addEventListner('clicl', () => { }, true).
+-by default event bubbling is used in event propagation, if we want to capturing we need to pass the third argument inside the `addEventListener()` as boolean value.
+`addEventListner('clicl', () => { }, true)`.
 
 ```javascript
 document.querySelector("#grandparent").addEventListener(
@@ -64,4 +64,4 @@ document.querySelector("#child").addEventListener(
 
 ## Event Propagation
 
-- If wre want the event target should only get triggered then we need to stop the propagation. (event.stopPropagation) to stop the propagation.
+- If wre want the event target should only get triggered then we need to stop the propagation. `event.stopPropagation` to stop the propagation.
