@@ -15,4 +15,4 @@ let emp2 = {
   lastName: "Singh",
 };
 
-employee.fullname.apply(emp2, ["Engineer", "Tech Corp"]); // Goldu Singh is working as a undefined in undefined company
+employee.fullname.apply(emp2, ["Engineer", "Tech Corp"]); // Goldu Singh is working as a Engineer in Tech Corp company
