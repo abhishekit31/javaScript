@@ -52,10 +52,3 @@ console.log(p); // 10
 /**
  * here the shadowing come into the picture if we have same var in bothr globala and block level then the block leven var is shadow of global var.
  */
-
-//-----inleagal shadowing
-
-let num = 40;
-{
-  var num = 20;
-}
