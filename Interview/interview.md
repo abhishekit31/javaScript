@@ -347,3 +347,66 @@ greetGoldu();
 
 // output : Hello, my name is Goldu and I am 22 years old.
 ```
+
+# Prototypal Inheritance
+
+prototypal inheritance is a mechanism by which javascript object inherit all the features and method from other.
+
+```javascript
+const p1 = {
+  name1: "Abhishek",
+};
+// prototypal inheritance
+const p2 = {
+  name2: "goldu",
+  __proto__: p1,
+};
+// prototypal inheritance
+const p3 = {
+  name3: "vishu",
+  __proto__: p2,
+};
+```
+
+## Prortotype
+
+In javascript every object has an internal property called prototype. it is commonly acces via the `__proto__` property.
+
+## Inheritance
+
+In javascript one object can inherit the property and method from their prototypes.
+
+if the property or method is not found in the object itself. Javascript looks for it on the object prototype.
+
+if still not found to their it continue searching upto the prototype chain untill it reaches till null.
+
+## why us prototype inheritance important
+
+1. It allows object to reuse property and merthods from other object.
+2. It supports dynamic behavior where object can ecxtends at Runtime.
+
+## What is prototype chaining.
+
+The prototype chain is a mechanism that allows object to inherit property and method from their prototype.
+
+Each object has a reference to another object called its prototype
+
+If an object doesn't have a property or method directly on it, Javascript will look it up the prototype chain.
+
+```javascript
+const p1 = {
+  name1: "Abhishek",
+};
+// prototypal inheritance
+const p2 = {
+  name2: "goldu",
+  __proto__: p1,
+};
+// prototypal inheritance
+const p3 = {
+  name3: "vishu",
+  __proto__: p2,
+};
+
+// this is the example of prototypal inheritance
+```
