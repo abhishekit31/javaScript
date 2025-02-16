@@ -244,7 +244,7 @@ It has three state `pending` `fullfilled` and `reject`.
 
 `rejected` → The operation failed (rejected).
 
-It is used to handle the async task(`no callbackHell`)
+It is used to handle the async task(no `callbackHell`)
 
 ### Creating a Basic Promise
 
