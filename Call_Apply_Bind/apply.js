@@ -5,7 +5,7 @@ let employee = {
   lastName: "Singh",
   fullname: function (designation, cmpName) {
     console.log(
-      `${this.firstName} ${this.lastName} is working as a ${this.designation} in ${this.cmpName} company`
+      `${this.firstName} ${this.lastName} is working as a ${designation} in ${cmpName} company`
     );
   },
 };
