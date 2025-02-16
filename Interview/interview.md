@@ -231,3 +231,47 @@ function getName() {
 console.log(x); // 10
 console.log(getName); // [Function: getName] return the function
 ```
+
+# What is promise ?
+
+Promise in a javascript is an object that represent the eventual completion of task.
+
+It has three state `pending` `fullfilled` and `reject`.
+
+`pending` → The async operation is still in progress.
+
+`fulfilled` → The operation was successful (resolved).
+
+`rejected` → The operation failed (rejected).
+
+It is used to handle the async task(`no callbackHell`)
+
+### Creating a Basic Promise
+
+```javascript
+let myPromise = new Promise((resolve, reject) => {
+  let success = true; // Change to false to test rejection
+  setTimeout(() => {
+    if (success) {
+      resolve("✅ Promise resolved!");
+    } else {
+      reject("❌ Promise rejected!");
+    }
+  }, 2000);
+});
+```
+
+### Handling Promises with .then() and .catch()
+
+```javascript
+myPromise
+  .then((message) => {
+    console.log(message); // ✅ Executes if resolved
+  })
+  .catch((error) => {
+    console.log(error); // ❌ Executes if rejected
+  })
+  .finally(() => {
+    console.log("🎉 Promise completed (success or failure)");
+  });
+```
