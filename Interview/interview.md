@@ -275,3 +275,75 @@ myPromise
     console.log("🎉 Promise completed (success or failure)");
   });
 ```
+
+# Manipulating this with call, apply, and bind
+
+## call() Method:
+
+The `call()` method allows you to invoke a function and explicitly set the value of `this`.
+
+You can also pass arguments to the function individually.
+
+by using `call()` function we can do the function borrowing.
+
+```javascript
+let person = {
+  name: "Vishu",
+  greet: function (age) {
+    console.log(`Hello, my name is ${this.name} and I am ${age} years old.`);
+  },
+};
+let person2 = {
+  name: "Goldu",
+};
+
+person.greet.call(person2, 22);
+
+// output : Hello, my name is Goldu and I am 22 years old.
+```
+
+## apply() Method :
+
+The `apply()` method is similar to `call()`, but instead of passing arguments individually, you pass them as an array.
+
+```javascript
+let person = {
+  name: "Vishu",
+  greet: function (age, occupation) {
+    console.log(
+      `Hello, my name is ${this.name} and I am ${age} years old ${occupation}`
+    );
+  },
+};
+let person2 = {
+  name: "Goldu",
+};
+
+person.greet.apply(person2, [22, "Developer"]);
+
+// output : Hello, my name is Goldu and I am 22 years old Developer.
+```
+
+## bind() Method :
+
+`bind()` method retuns the function but it does not invoke immediately.
+
+The function which is return by bind method we can invoke it by name.
+
+```javascript
+let person = {
+  name: "Vishu",
+  greet: function (age) {
+    console.log(`Hello, my name is ${this.name} and I am ${age} years old.`);
+  },
+};
+let person2 = {
+  name: "Goldu",
+};
+// Using bind to create a new function with a bound `this`
+let greetGoldu = person.greet.bind(person2, 22);
+
+greetGoldu();
+
+// output : Hello, my name is Goldu and I am 22 years old.
+```
