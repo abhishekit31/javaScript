@@ -177,8 +177,9 @@ Display();
 
 ## async
 
-1. async is a keyword in javascript which is used before the function to make this fuunction is async function.
-2. it always return the promise whether its return explictly or not.
+async is a keyword in javascript which is used before the function to make this fuunction is async function.
+
+it always return the promise whether its return explictly or not.
 
 ```javascript
 async function fetchData() {
@@ -190,9 +191,11 @@ console.log(fetchData());
 
 ## await
 
-1. await is keyword that is only used inside the async function.
-2. it pause the excution utill the promise resolved.
-3. it makes asynchronus code looks synchronus and more readable.
+await is keyword that is only used inside the async function.
+
+it pause the excution utill the promise resolved.
+
+it makes asynchronus code looks synchronus and more readable.
 
 ```javascript
 async function fetchData() {
